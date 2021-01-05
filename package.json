@@ -1,0 +1,20 @@
+{
+  "name": "portfolio_scipio14",
+  "version": "0.0.5",
+  "description": "Portfolio y página web personal de @Scipio14",
+  "main": "script.js",
+  "private": true,
+  "scripts": {
+    "start": "gulp watch"
+  },
+  "keywords": [
+    "portfolio",
+    "CV"
+  ],
+  "author": "@Scipio14",
+  "license": "No license",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2"
+  }
+}
