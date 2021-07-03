@@ -1,11 +1,12 @@
 {
   "name": "portfolio_scipio14",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Portfolio y página web personal de @Scipio14",
   "main": "script.js",
   "private": true,
   "scripts": {
-    "start": "gulp watch"
+    "start": "gulp watch",
+    "markdown": "gulp md"
   },
   "keywords": [
     "portfolio",
@@ -15,6 +16,7 @@
   "license": "No license",
   "devDependencies": {
     "browser-sync": "^2.26.13",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-markdown": "^6.0.0"
   }
 }

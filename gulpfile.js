@@ -1,5 +1,13 @@
 const gulp = require("gulp");
+const markdown = require("gulp-markdown");
 const browserSync = require("browser-sync");
+
+async function md() {
+  await gulp
+    .src("./blog/md/**/*.md")
+    .pipe(markdown())
+    .pipe(gulp.dest("./blog/articles"));
+}
 
 function watch() {
   browserSync.init({
@@ -13,3 +21,4 @@ function watch() {
   gulp.watch("./js/**/*.js").on("change", browserSync.reload);
 }
 exports.watch = watch;
+exports.md = md;

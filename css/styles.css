@@ -45,6 +45,14 @@ a:hover {
   opacity: 0.75;
 }
 
+details nav > a {
+  text-decoration: none;
+  display: block;
+  color: var(--baby-blue);
+  padding-left: 1.75rem;
+  margin-top: 0.2rem;
+}
+
 h1 {
   margin: 0;
   font-size: 2rem;
@@ -493,6 +501,27 @@ p {
   height: 1.5rem;
 }
 
+.summary {
+  border: thin solid black;
+  display: flex;
+
+  align-items: center;
+  cursor: pointer;
+}
+
+.summary > h3 {
+  padding-left: 0.75rem;
+}
+
+.summary svg {
+  fill: var(--first-color);
+}
+
+.summary::-webkit-details-marker {
+  color: var(--alternate-color);
+  font-size: 1rem;
+  margin-left: 0.75rem;
+}
 @media screen and (min-width: 768px) {
   .contact-cards {
     display: grid;
@@ -543,5 +572,8 @@ p {
 
   .portfolio .section-title {
     grid-column: span 3;
+  }
+  .summary {
+    width: 80%;
   }
 }
